@@ -9,8 +9,9 @@ class Minesweeper(object):
         self.createBoard()
 
         print "Placing Mines..."
-        self.mines = set([(2, 6), (7, 0), (3, 3), (5, 6), (4, 5), (1, 6), (4, 3), (0, 3), (6, 5), (5, 3)])
-        # self.placeMines()
+        self.mines = self.placeMines()
+        # Example mines set to test:
+        # set([(2, 6), (7, 0), (3, 3), (5, 6), (4, 5), (1, 6), (4, 3), (0, 3), (6, 5), (5, 3)])
 
         print "To quit, enter q\n"
         self.printBoard()
